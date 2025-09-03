@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Estudio - Gracias</title>
+
+    <!-- =============================================================== */
+    /* INTEGRACIÓN DE PÍXEL Y ANALYTICS                                  */
+    /* =============================================================== */ -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    // **ID de Píxel de Meta insertado**
+    fbq('init', '792450723348944');
+    fbq('track', 'PageView');
+    // Evento para registrar una cita agendada con éxito
+    fbq('track', 'Schedule'); 
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=792450723348944&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Analytics -->
+    <!-- **ID de Medición de Google Analytics insertado** -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P67NB8CXYP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P67NB8CXYP');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Tailwind CSS para un diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de colores personalizados para Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-black': '#2b2b2b',
+                        'brand-white': '#f8f7f3',
+                        'brand-brown': '#937b63',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Desplazamiento suave al hacer clic en los enlaces */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* =============================================================== */
+        /* ZONA PARA CARGAR TUS PROPIAS TIPOGRAFÍAS */
+        /* =============================================================== */
+
+        @font-face {
+            font-family: 'The Seasons';
+            src: url('https://res.cloudinary.com/drrhn6t1c/raw/upload/v1755826797/Fontspring-DEMO-theseasons-reg_evnlrs.otf') format('opentype');
+            font-weight: 400; /* Regular */
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'The Seasons';
+            src: url('https://res.cloudinary.com/drrhn6t1c/raw/upload/v1755826797/Fontspring-DEMO-theseasons-lt_wuifpf.otf') format('opentype');
+            font-weight: 100; /* Light */
+            font-style: normal;
+        }
+        
+        /* Nueva fuente para descripciones */
+        @font-face {
+            font-family: 'Glacial Indifference';
+            src: url('https://res.cloudinary.com/drrhn6t1c/raw/upload/v1755827417/GlacialIndifference-Regular_z5pngu.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Aplicación de la tipografía personalizada */
+        body {
+            font-family: 'The Seasons', serif;
+            font-weight: 400;  
+        }
+        
+        /* Clase para aplicar la nueva fuente a las descripciones */
+        .description-font {
+            font-family: 'Glacial Indifference', sans-serif;
+        }
+
+        /* =============================================================== */
+        /* ZONA PARA MODIFICAR TAMAÑOS Y ESPACIOS EN PÍXELES (PX) */
+        /* =============================================================== */
+        
+        .main-title-font-size {  
+            font-size: 38px;  
+        }
+        .logo-size {
+            height: 60px;  
+        }
+        
+       
+        /* =============================================================== */
+        /* AJUSTES PARA PANTALLAS PEQUEÑAS (CELULARES) */
+        /* =============================================================== */
+        @media (max-width: 768px) {
+            .main-title-font-size {
+                font-size: 30px; 
+            }
+        }
+    </style>
+</head>
+<body class="bg-brand-white text-brand-black">
+
+    <div class="py-10 flex justify-center">
+        <img src="https://res.cloudinary.com/drrhn6t1c/image/upload/v1752514553/logo-FE-fondoblanco_c8tlxc.png" alt="Finite Estudio Logo" class="logo-size">
+    </div>
+
+    <main>
+        <!-- Sección de Agradecimiento Principal -->
+        <section class="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 pb-16">
+            <div class="max-w-3xl mx-auto">
+                
+                <div class="mb-8">
+                    <svg class="w-20 h-20 mx-auto text-brand-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+
+                <h1 class="tracking-wider leading-tight mb-6 main-title-font-size">
+                    <strong>GRACIAS POR DAR EL SIGUIENTE PASO</strong>
+                </h1>
+
+                <p class="text-xl md:text-2xl mb-8 description-font max-w-2xl mx-auto">
+                    Su sesión de diseño de cobertura ha sido agendada con éxito. Estamos muy emocionados por la oportunidad de conocerlos y escuchar todo sobre su boda.
+                </p>
+
+                <p class="text-2xl md:text-3xl tracking-widest mt-16 mb-12">
+                    NOS VEMOS PRONTO
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Sección "Mientras esperas" -->
+        <section class="bg-brand-black text-brand-white px-4 py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl tracking-wider mb-6">Tenemos un regalo para ustedes...</h2>
+                <p class="text-lg description-font mb-12 max-w-2xl mx-auto">
+                    Para ayudarles a que la planeación de su boda sea más sencilla y disfruten el proceso, hemos creado una checklist de planeación completa. ¡Descárguenla gratis!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="https://payhip.com/b/w2mJR" target="_blank" class="inline-block bg-brand-brown text-white font-bold tracking-widest py-4 px-10 rounded-md hover:opacity-90 transition-opacity duration-300">
+                        DESCARGAR CHECKLIST DE BODA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+
