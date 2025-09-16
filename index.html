@@ -9,7 +9,7 @@
     /* INTEGRACIÓN DE PÍXEL Y ANALYTICS                                  */
     /* =============================================================== */ -->
 
-     <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -19,9 +19,18 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    // **ID de Píxel de Meta insertado**
+    
+    // Inicializa el Píxel con tu ID
     fbq('init', '792450723348944');
+    
+    // Registra la visita a la página (evento estándar)
     fbq('track', 'PageView');
+    
+    // Registra que se ha agendado una cita (evento estándar 'Schedule')
+    // El nombre 'Schedule' es el correcto en inglés para "Programación".
+    if (typeof fbq === 'function') {
+      fbq('track', 'Schedule');
+    }
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=792450723348944&ev=PageView&noscript=1"
@@ -159,7 +168,7 @@
                     Para ayudarles a que la planeación de su boda sea más sencilla y disfruten el proceso, hemos creado una checklist de planeación completa. ¡Descárguenla gratis!
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <a href="https://payhip.com/b/w2mJR" target="_blank" class="inline-block bg-brand-brown text-white font-bold tracking-widest py-4 px-10 rounded-md hover:opacity-90 transition-opacity duration-300">
+                    <a href="https://payhip.com/b/w2mJR" target="_blank" class="inline-block bg-brand-brown text-white font-bold tracking-widest py-4 px-10 rounded-md hover-opacity-90 transition-opacity duration-300">
                         DESCARGAR CHECKLIST DE BODA
                     </a>
                 </div>
@@ -170,6 +179,8 @@
 
 </body>
 </html>
+
+
 
 
 
